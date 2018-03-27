@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="../../image/logo.png"></image>
+    <text class="userinfo-nickname">2048Pro</text>
+  </view>
+  
+  <view class="usermotto">
+    <button class="user-motto" bindtap='nextpage'>{{motto}}</button>
+  </view>
+  <view class='logo'>
+    <text class='logo_text'>生活越来越美好</text>
+  </view>
+
+</view>

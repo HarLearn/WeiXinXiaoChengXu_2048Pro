@@ -1,0 +1,51 @@
+<!--pages/ranking/ranking.wxml-->
+<view class='page' disable-scroll="true" >
+  <scroll-view scroll-y >
+    <!-- 用户信息展示 -->
+    <view class='userinfo'>
+      <view class='userhear'>
+        <image class='user_image' src='{{userin[0].url}}'>tou</image>
+        <text class='user_text'>{{userin[0].name}}</text>
+      </view>
+      <view class='grade'>
+        <view class='ranking'>
+          <view class='rank'>当前排名</view>
+          <view class='rank_text'>
+            <view class='scorebest'>{{rankuser}}</view>
+            <view class='zhfen'>名</view>
+          </view>
+        </view>
+        <view class='ranking'>
+          <view class='rank'>历史最高</view>
+          <view class='rank_text'>
+            <view class='scorebest'>{{userin[0].best}}</view>
+            <view class='zhfen'>分</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 排行榜 -->
+    <view class='list'>
+
+      <view wx:for="{{userinfo}}" wx:for-index="index" wx:for-item="userinfo" wx:key="index" class='item'>
+        <view class='listitem'>
+          <view class='userin'>
+            <view class='number'>{{index+1}}</view>
+            <view class='listhear'>
+              <image src='{{userinfo.url}}'></image>
+            </view>
+            <text class='listname'>{{userinfo.nickname}}</text>
+          </view>
+          <view class='listbest'>
+            <view class='scorebest'>{{userinfo.bestscore}}</view>
+            <view class='zhfen'>分</view>
+          </view>
+        </view>
+      </view>
+      <!-- 底部结束语 -->
+      <view class='end'>
+        <text>(⇀‸↼‶)稳住，我们下把能进20名</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/main/main.wxml-->
+<view class='page' disable-scroll="true">
+  <view class='background'>
+    <view class='scoring'>
+
+      <view class='top'>
+        <text class='topic'>2048</text>
+
+        <view class='scor'>
+          <view class='score'>
+            <text class='score_title'>SCORE</text>
+            <view class='score_num'>{{score}}</view>
+          </view>
+
+          <view class='score'>
+            <text class='score_title'>BEST</text>
+            <view class='score_num'>{{best}}</view>
+          </view>
+        </view>
+
+      </view>
+
+      <view class='start'>
+        <view class='summary'>
+        <image class='summary_image' src='../../image/hot.png'></image>
+        <text class='summary_text'>请关注公众号"CodeId" 来提建议</text>
+        </view>
+        <view class='restart' bindtap='newgame'>
+        <text class='restart_text'>新游戏</text>
+        <image class='restart_image' src='../../image/refresh.png'></image>
+        </view>
+      </view>
+
+    </view>
+    <!-- 矩阵 -->
+    <view class='array' bindtouchstart='touchstart' bindtouchmove='touchmove' bindtouchend='touchend'>
+      <view wx:for="{{row}}" class='row' wx:for-item="clum" wx:key='row'>
+        <view wx:for="{{clum}}" class='clum' wx:for-item="num" wx:key='clum'>
+          <view class='cell cell-{{num}}'>{{num}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

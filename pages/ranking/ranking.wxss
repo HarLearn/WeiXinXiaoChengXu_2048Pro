@@ -1,0 +1,186 @@
+/* pages/ranking/ranking.wxss */
+
+page{
+  background-color: #faf8ee;
+}
+
+.userinfo {
+  height: 375rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.userhear {
+  width: 600rpx;
+  height: 230rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid yellow; */
+}
+
+.user_image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 19rpx;
+  /* border: 1px solid blue; */
+}
+
+.user_text {
+  height: 60rpx;
+  width: 600rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bold;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* border: 1px solid purple; */
+}
+.grade {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 600rpx;
+  height: 144rpx;
+  /* border: 1px solid black; */
+}
+
+.ranking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 140rpx;
+  width: 250rpx;
+  /* border: 1px solid brown; */
+}
+
+.rank {
+  font-size: 45rpx;
+  /* border: 1px solid red; */
+}
+
+.rank_text {
+  margin-top: 4rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+/*==============排行榜============*/
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  width: 700rpx;
+}
+
+.listitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 90rpx;
+  border-top: 1px solid #e1e1e1;
+    /* border: 1px solid fuchsia;    */
+}
+
+.userin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10rpx;
+  width: 550rpx;
+
+   /* border: 1px solid red;    */
+}
+
+
+.number {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  font-size: 47rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   /* border: 1px solid red;   */
+}
+
+.listhear {
+  margin-right: 12rpx;
+}
+
+.listhear image {
+  width: 60rpx;
+  height: 60rpx;
+   /* border: 1px solid red;   */
+}
+
+.listname {
+  width: 345rpx;
+  height: 55rpx;
+  font-size: 28rpx;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center; 
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+     /* border: 1px solid purple;    */
+}
+.listbest {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+
+     /* border: 1px solid black;    */
+}
+
+.scorebest {
+  font-weight: bold;
+  font-size: 34rpx;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    /* border: 1px solid black;   */
+}
+
+.zhfen {
+  margin-top: 12rpx;
+  margin-left: 4rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #999;
+    /* border: 1px solid black;   */
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.end text {
+  color: #999;
+  font-size: 25rpx;
+}

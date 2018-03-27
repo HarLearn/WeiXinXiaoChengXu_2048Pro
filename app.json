@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/main/main",
+    "pages/ranking/ranking",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#faf8ee",
+    "navigationBarTitleText": "2048pro",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#8B814C",
+    "backgroundColor": "#faf8ee",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "/image/main.png",
+        "selectedIconPath":"/image/main_select.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "排名",
+        "iconPath": "/image/ranking.png",
+        "selectedIconPath": "/image/ranking_select.png"
+      }
+    ]
+  },
+  "debug":false
+
+}
